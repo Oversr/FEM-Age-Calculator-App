@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Google Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap" rel="stylesheet">
+        <!-- CSS -->
+        <link rel="stylesheet" href="style.css">
+        <title>Age Calculator App</title>
+    </head>
+    <body>
+        
+        <section class="app">
+            <div class="container">
+                <section class="top">
+                    <form>
+                        <div class="form-container">
+                            <div class="input-container">
+                                <label for="day">DAY</label>
+                                <input type="number" id="day" name="day" placeholder="DD" required>
+                                <p class="empty-error-message hidden">This field is required</p>
+                                <p class="invalid-error-message hidden">Must be a valid day</p>
+                                <p class="invalid-date-error-message hidden">Must be a valid date</p>
+                            </div>
+                            <div class="input-container">
+                                <label for="month">MONTH</label>
+                                <input type="number" id="month" name="month" placeholder="MM" required>
+                                <p class="empty-error-message hidden">This field is required</p>
+                                <p class="invalid-error-message hidden">Must be a valid month</p>
+                            </div>
+                            <div class="input-container">
+                                <label for="year">YEAR</label>
+                                <input type="number" id="year" name="year" placeholder="YYYY" required>
+                                <p class="empty-error-message hidden">This field is required</p>
+                                <p class="invalid-error-message hidden">Must be in the past</p>
+                            </div>
+                        </div>
+                        <button type="submit" class="submit-btn"><img src="images/icon-arrow.svg" alt="arrow"></button>
+                    </form>
+                </section>
+
+                <section class="bottom">
+                    <div class="results">
+                        <h2><span class="YYYY">- - </span>years</h2>
+                        <h2><span class="MM">- - </span>months</h2>
+                        <h2><span class="DD">- - </span>days</h2>
+                    </div>
+                </section>
+            </div>
+        </section>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+    </body>
+</html>
